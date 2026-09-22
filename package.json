@@ -1,0 +1,17 @@
+{
+  "name": "ai-mental-os",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "functions/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start --workspace=apps/mobile",
+    "setup:appwrite": "node --loader ts-node/esm packages/appwrite/scripts/setup.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

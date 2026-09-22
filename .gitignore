@@ -1,0 +1,62 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Expo / React Native
+apps/mobile/.expo/
+apps/mobile/dist/
+apps/mobile/web-build/
+apps/mobile/ios/
+apps/mobile/android/
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+*.orig.*
+
+# Web / Next.js
+apps/web/.next/
+apps/web/out/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Testing
+coverage/
+
+# Appwrite CLI local cache
+.appwrite/
+
+# Dev verification screenshots (adb)
+.dev-screenshots/
+
+# Claude Code session-local state
+.claude/
+
+# Appwrite function deployment archives (rebuilt on each deploy)
+functions/*/code.tar.gz
